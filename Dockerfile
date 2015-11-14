@@ -7,7 +7,7 @@ ENV LC_ALL=en_US.UTF-8
 
 RUN equo up && equo u 
 
-RUN echo 3 | equo i dev-util/molecule dev-vcs/git
+RUN echo 3 | equo i dev-util/molecule dev-vcs/git app-misc/ca-certificates
 
 RUN git clone https://github.com/Sabayon/molecules.git /sabayon
 
