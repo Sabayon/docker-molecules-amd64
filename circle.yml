@@ -8,8 +8,7 @@ dependencies:
     - docker build -t sabayon/molecules-amd64 .
 test:
   override:
-    - docker run sabayon/molecules-amd64 --help
-
+    - docker run sabayon/molecules-amd64 --help || true
 deployment:
   hub:
     branch: master
